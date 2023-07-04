@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.center{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px auto;
+    /* outline: 2px solid red; */
+}
+
+/* HEADER */
+.full_top_menu{
+    background-color:#222222;
+}
+
+.top_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    min-height: 75px;
+    background-color: #222222;
+    padding: 0px 20px 0px 20px; 
+    box-sizing:border-box;
+}
+
+.top_logo_box{
+    display: flex;
+    gap: 41px;
+    align-items: center;
+    
+}
+
+.top_menu_item1{
+    width: 44px;
+    height: 38px;
+}
+
+.top_menu_item2{
+    width: 26px;
+    height: 26px;
+}
+
+.top_menu_item3{
+    
+}
+
+/* HEADER */
+
+/* TOP_PREVIEW */
+.full_top_preview{
+    background-color:#F1E4E6;
+}
+
+.top_preview_ul{
+    display: flex;
+    transform: translate(-20%, 0%);
+}
+
+.preview_item_1{
+    box-sizing:border-box;
+    max-width: 800px;
+    min-height: 764px;
+}
+
+.preview_item_1>img{
+    min-height: 764px;
+}
+
+.preview_item_2{
+    max-width: 406px;
+    min-height: 93px;
+    display: flex;
+    align-content:center;
+    flex-wrap: wrap;
+}
+
+.preview_box_text{
+    /* display: inline; */
+    margin-left: 16px;
+}
+
+.preview_first_text{
+    color: #222;
+    font-size: 48px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.preview_second_text{
+    color: #222;
+    font-size: 24px;
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.preview_pink_text{
+    color: #F16D7F;
+    font-size: 24px;
+    font-family: Lato;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+}
+/* TOP_PREVIEW */
+
+/* FILTER_CARDS */
+.filter_cards{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px auto;
+    justify-content: center;
+    gap: 30px;
+    
+
+}
+
+.filter_first_card{
+    max-width: 360px;
+    min-height: 260px;
+    outline: 1px solid red;
+}
+
+.filter_second_card{
+    max-width: 1140px;
+    max-height: 180px;
+    outline: 1px solid red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* FILTER_CARDS */
+
+/* BIT_PEACE */
+.bit_peace{
+    margin-top: 96px;
+    margin-bottom: 48px;
+}
+
+
+.bit_peace_big{
+    color: #222;
+    font-size: 30px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.bit_peace_small{
+    color: #9F9F9F;
+    font-size: 14px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+/* BIT_PEACE */
+
+/* CATALOG_CARD */
+.catalog_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, 581px);
+    gap: 30px;
+
+}
+
+.catalog_card{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.catalog_img{
+    max-width: 360px;
+    max-height: 420px;
+}
+
+.catalog_card_special{
+    background-color: #F7E4E2;
+    max-height: 420px;
+}
+
+.catalog_img_special{
+    max-width: 142px;
+    padding: 9px 110px 11px 108px;
+}
+
+.catalog_card_box{
+    padding: 24px;
+}
+
+.catalog_name{
+    color: #000;
+    font-size: 13px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    
+}
+
+.catalog_description{
+    color: #5D5D5D;
+    font-size: 14px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 16px 0px;
+}
+
+.catalog_price{
+    color: #F16D7F;
+    font-size: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* CATALOG_CARD */
+
+/* BUTTON_IN_BOTTOM */
+.full_button_in_bottom{
+    
+}
+
+.button_in_bottom{
+    margin: 48px auto 60px auto;
+    display: block;
+    outline: 1px solid #FF6A6A;
+    width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+}
+
+.btn_box{
+    border: none;
+    margin: 15px 0px 14px 0px;
+    background-color: white;
+    color: #F26376;
+    font-size: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* BUTTON_IN_BOTTOM */
