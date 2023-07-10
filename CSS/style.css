@@ -62,11 +62,11 @@ li{
     transform: translate(-20%, 0%);
 }
 
-.preview_item_1{
+/* .preview_item_1{
     box-sizing:border-box;
     max-width: 800px;
     min-height: 764px;
-}
+} */
 
 .preview_item_1>img{
     min-height: 764px;
@@ -126,9 +126,41 @@ li{
 }
 
 .filter_first_card{
-    max-width: 360px;
-    min-height: 260px;
+
     outline: 1px solid red;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_on_img{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 154px;
+    min-height: 50px;
+}
+.special_text_on_img{
+    max-width: 160px;
+}
+.wrp_women{
+    color:#F16D7F;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .filter_second_card{
@@ -187,9 +219,12 @@ li{
     
 }
 
+
 .catalog_img{
     max-width: 360px;
     max-height: 420px;
+    width: 100%;
+    display: block;
 }
 
 .catalog_card_special{
@@ -264,3 +299,68 @@ li{
     line-height: normal;
 }
 /* BUTTON_IN_BOTTOM */
+
+@media (max-width: 1024px) {
+    .center {
+        max-width: 735px;
+        /* outline: 2px solid red; */
+    }
+
+    .top_preview_ul{
+        transform: translate(0%, 0%);
+    }
+
+    .preview_item_1>img{
+        min-height: 368px;
+        max-width: 386px;
+    }
+
+    .preview_first_text{
+        font-size: 44px;
+    }
+
+    .preview_second_text{
+        font-size: 22px;
+    }
+
+    .preview_pink_text{
+        font-size: 22px;
+    }
+
+    .filter_cards{
+        grid-template-columns: repeat(3, 232px);
+        grid-template-rows: 168px auto;
+        gap: 20px;
+    }
+
+    .filter_first_card{
+        width: 232px;
+        height: 168px;
+        position: relative;
+    }
+
+    .filter_first_card>img{
+        width: 232px;
+        height: 168px; 
+    }
+
+    .filter_second_card{
+        width: 735px;
+        height: 116px;
+    }
+
+    .filter_second_card>img{
+        width:  735px;
+        height: 116px;
+    }
+
+    .bit_peace_big{
+        margin-top: 110px;
+    }
+
+    .catalog_grid{
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: repeat(3, 581px);
+        gap: 16px;
+    }
+}
