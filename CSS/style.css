@@ -205,40 +205,114 @@ li{
 /* BIT_PEACE */
 
 /* CATALOG_CARD */
-.catalog_grid{
+.catalog_grid {
     display: grid;
     grid-template-columns: repeat(3, 360px);
     grid-template-rows: repeat(2, 581px);
     gap: 30px;
-
 }
 
-.catalog_card{
-    display: flex;
-    flex-direction: column;
-    
+.catalog_card {
+  position: relative;
+  /* overflow: hidden; */
 }
 
-
-.catalog_img{
+.catalog_img {
     max-width: 360px;
     max-height: 420px;
     width: 100%;
     display: block;
+    transition: transform 0.3s;
 }
 
 .catalog_card_special{
+    display: flex;
+    justify-content: center;
     background-color: #F7E4E2;
-    max-height: 420px;
 }
 
 .catalog_img_special{
-    max-width: 142px;
-    padding: 9px 110px 11px 108px;
+    max-width: 360px;
+    height: 420px;
+    /* width: 100%; */
+    display: block;
+    transition: transform 0.3s;
 }
 
-.catalog_card_box{
-    padding: 24px;
+.catalog_img_hover:hover {
+  /* transform: scale(1.1); */
+}
+
+.overlay_catalog_card {
+    position: relative;
+}
+
+.overlay_catalog_card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    transition: opacity 0.3s;
+    /* z-index: -1; */
+}
+
+.overlay_catalog_card:hover::before {
+  opacity: 1;
+}
+
+.overlay_catalog_card_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.overlay_catalog_card:hover .overlay_catalog_card_content {
+  opacity: 1;
+}
+
+.catalog_card_hover_text {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    outline: 2px solid white;
+
+}
+
+.catalog_card_hover_text button {
+    background-color: transparent;
+    padding: 14px 16px 13px 11px;
+    border: none;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button_in_cart{
+    display: flex;
+    align-content: center;
+}
+
+.cart_img{
+    padding-left: 11px;
+}
+
+.catalog_card_box {
+  padding: 24px;
+}
+
+.btn_cart{
+
 }
 
 .catalog_name{
